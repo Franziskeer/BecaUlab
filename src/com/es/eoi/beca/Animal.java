@@ -6,6 +6,10 @@ public class Animal {
 	private double peso;
 	private double altura;
 	
+	public void hablar() {
+		System.out.println("Hablo");
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}

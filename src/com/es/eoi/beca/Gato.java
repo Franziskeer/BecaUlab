@@ -1,7 +1,10 @@
 package com.es.eoi.beca;
 
 public class Gato extends Animal {
-	public void maullar() {
+	
+	@Override
+	public void hablar() {
 		System.out.println("Miau");
 	}
+	
 }

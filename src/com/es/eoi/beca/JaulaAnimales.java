@@ -1,6 +1,6 @@
 package com.es.eoi.beca;
 
-public class Main {
+public class JaulaAnimales {
 
 	public static Animal[] jaula = new Animal[15];
 
@@ -9,15 +9,7 @@ public class Main {
 		rellenarJaula(jaula);
 
 		for (int i = 0; i < jaula.length; i++) {
-
-			if (jaula[i] instanceof Perro) {
-				((Perro) jaula[i]).ladrar();
-			} else if (jaula[i] instanceof Gato) {
-				((Gato) jaula[i]).maullar();
-			} else if (jaula[i] instanceof Raton) {
-				((Raton) jaula[i]).roer();
-			}
-
+			jaula[i].hablar();
 		}
 	}
 
