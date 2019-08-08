@@ -13,8 +13,10 @@ public class Calificaciones {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
+		
 		Scanner in = new Scanner(System.in);
 		printMenu(in);
+		
 	}
 
 	public static void printMenu(Scanner in) {
@@ -151,6 +153,7 @@ public class Calificaciones {
 		for (Alumno alumno : auxNotas) {
 			System.out.println(alumno);
 		}
+		
 	}
 
 	public static void listCriteria(Notas nota) {
@@ -159,6 +162,7 @@ public class Calificaciones {
 		System.out.println("HAS ELEGIDO LISTAR CALIFICACIONES " + nota);
 
 		for (Alumno alumno : calif) {
+			
 			if (alumno.getCalificacion().equals(nota)) {
 				System.out.println(alumno);
 			}
