@@ -15,7 +15,7 @@ public class Ejercicios {
 	public static void ejercicio2() {
 		// EJ 2
 		sc = new Scanner(System.in);
-		Integer num1, num2, resul;
+		Integer num1, num2;
 		String op;
 		
 		System.out.print("Introduce un entero: ");

@@ -1,4 +1,4 @@
-package com.es.eoi.beca;
+package com.es.eoi.beca.enums;
 
 public class Alumno implements Comparable<Alumno> {
 
@@ -6,11 +6,11 @@ public class Alumno implements Comparable<Alumno> {
 	private Notas calificacion;
 	private Double nota;
 
-	public Alumno(String name, Notas calificacion, Double nota) {
+	public Alumno(String name, Double nota) {
 		super();
 		this.nombre = name;
-		this.calificacion = calificacion;
 		this.nota = nota;
+		setNota(nota);
 	}
 
 	public String getName() {
@@ -29,12 +29,32 @@ public class Alumno implements Comparable<Alumno> {
 		this.nombre = name;
 	}
 
-	public void setCalificacion(Notas calificacion) {
-		this.calificacion = calificacion;
-	}
-
 	public void setNota(Double nota) {
-		this.nota = nota;
+
+		if (nota < 0) {
+			
+			this.nota = 0.0;
+			this.calificacion = Notas.INSUFICIENTE;
+			
+		} else if (nota > 10) {
+			
+			this.nota = 10.0;
+			this.calificacion = Notas.SOBRESALIENTE;
+			
+		} else {
+
+			if (nota >= 0 && nota < 5) {
+				calificacion = Notas.INSUFICIENTE;
+			} else if (nota >= 5 && nota < 7) {
+				calificacion = Notas.SUFICIENTE;
+			} else if (nota >= 7 && nota < 9) {
+				calificacion = Notas.NOTABLE;
+			} else if (nota >= 9 && nota < 10) {
+				calificacion = Notas.SOBRESALIENTE;
+			}
+
+		}
+
 	}
 
 	@Override
