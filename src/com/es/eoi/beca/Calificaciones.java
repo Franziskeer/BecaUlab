@@ -11,10 +11,10 @@ public class Calificaciones {
 
 	private static final String SEPARATOR = "===============================================";
 
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		printMenu(in);
+		in.close();
 	}
 
 	public static void printMenu(Scanner in) {
