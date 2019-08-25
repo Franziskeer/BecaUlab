@@ -1,0 +1,22 @@
+[
+  {
+    "cod": 1,
+    "name": "3",
+    "description": "3",
+    "vat": "TWENTYONE",
+    "price": 3.0,
+    "availableProducts": 3,
+    "soldProducts": 0,
+    "category": "MECANIC"
+  },
+  {
+    "cod": 2,
+    "name": "2",
+    "description": "2",
+    "vat": "TEN",
+    "price": 2.0,
+    "availableProducts": 2,
+    "soldProducts": 0,
+    "category": "MATERIAL"
+  }
+]
