@@ -18,8 +18,25 @@ public class VehiculoService {
 		return repository.findAll();
 	}
 
+	public void newVehiculo(Vehiculo newVeh) {
+		repository.save(newVeh);
+	}
+	
 	public Vehiculo findVehiculoById(String id) {
 		return repository.findById(id).get();
+	}
+
+	public void updateVehiculo(String id, Vehiculo newVeh) {
+		repository.findById(id)
+			.map(vehiculo -> {
+				vehiculo.setMarca(newVeh.getMarca());
+				vehiculo.setModelo(newVeh.getModelo());
+				return repository.save(vehiculo);
+			});
+	}
+	
+	public void deleteVehiculoById(String id) {
+		repository.deleteById(id);
 	}
 	
 }
