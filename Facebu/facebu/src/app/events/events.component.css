@@ -1,0 +1,44 @@
+/* Cada uno de los section CAJA GRIS */
+.contenido {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #23374d;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: 2vh 0 2vh 0;
+    padding: 3vh 4vw;
+}
+
+.contenido h1, label {
+    margin: 2vh 0 0 0;
+    font-weight: bold;
+}
+
+/* Formulario para crear un Evento */
+#crearEvento {
+    padding-left: 1vw;
+}
+
+#crearEvento input[type=date] {
+    width: 25%;
+}
+
+#crearEvento input[type="submit"] {
+    width: 15%;
+    margin-left: 60%;
+}
+
+/* Formulario para buscar un Evento */
+#buscarEvento {
+    display: flex;
+    margin-top: 2vh; 
+}
+
+#buscarEvento input[type=text] {
+    width: 80%;
+}
+
+#buscarEvento input[type="submit"] {
+    width: 15%;
+    margin-left: 5%;
+}
