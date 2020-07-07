@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <title>Curso HTML5 EOI</title>
+        <meta charset="utf-8">
+        <meta charset="UTF-8"> <meta name="description" content="Curso de HTML5 EOI"> 
+        <meta name="author" content="Mi nombre"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/practicaJS.css">
+    </head>
+    <body> 
+        <section class="formulario">
+            <section class="row"> 
+                <b>Datos personales</b>
+            </section>
+            <section id="info" class="row"></section>
+            <section class="row">
+                <label for="name">Nombre: </label>
+                <input name="name" id="nameId" type="text" value="ANTONIO">
+            </section>
+            <section class="row">
+                <label for="email">Email: </label>
+                <input name="email" id="emailId" type="text">
+            </section>
+            <section class="row">
+                <label for="prov">Provincia: </label>
+                <select name="prov" id="provId">
+                    <optgroup label="Comunidad Valenciana">
+                        <option value="ALICANTE">ALICANTE</option>
+                        <option value="CASTELLÓN">CASTELLÓN</option>
+                    <optgroup label="Comunidad murciana">
+                        <option value="MURCIA">MURCIA</option>
+                        <option value="TOTANA">TOTANA</option>
+                </select>
+            </section>
+            <section class="row">
+                <button onclick=validate()>Enviar</button>
+            </section>
+            <section class="row alert">
+                <label id="alert"></label>
+            </section>
+        </section>
+    </body> 
+    <script type="text/javascript" src="js/ejercicio22.js"></script> 
+</html>

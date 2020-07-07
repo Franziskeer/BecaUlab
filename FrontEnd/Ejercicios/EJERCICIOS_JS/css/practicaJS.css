@@ -1,0 +1,15 @@
+.formulario {
+    padding: 1em;
+    width: 50%;
+    
+    border: 1px black solid;
+}
+
+.row {
+    display: flex;
+    margin: 20px;
+}
+
+.alert {
+    color: red;
+}

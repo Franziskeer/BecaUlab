@@ -1,0 +1,5 @@
+<section class="flex">
+    <section *ngFor="let friend of myFriends" [class.selected]="friend.selected" (mouseenter)="selectFriend(friend, myFriends)">
+         {{mensaje}}
+    </section>   
+</section>    

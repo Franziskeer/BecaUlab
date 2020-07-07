@@ -1,0 +1,35 @@
+<section class="contenido">
+    <h1>Crear Evento</h1>
+    <!-- <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)"> -->
+        <section id="crearEvento" class="form-group">
+            <section class="row">
+                <label for="name">Nombre del evento: </label>
+                <input type="textinput" class="form-control" name="name" placeholder="Introduce el nombre del evento">
+            </section>
+            <section class="row">
+                <label for="description">Descripción: </label>
+                <textarea class="form-control" name="description" placeholder="Introduce una descripción"></textarea>
+            </section>
+            <section class="row">
+                <label for="eventDate">Fecha del evento: </label>
+            </section>
+            <section class="row"> 
+                <input type="date" class="form-control column" name="eventDate">
+                <input type="submit" class="btn btn-primary column" value="Crear evento">
+            </section>
+        </section>
+    <!-- </form> -->
+</section>
+
+
+<section class="contenido">
+    <h1>Buscar Evento</h1>
+    <!-- <form [formGroup]="formGroup"> -->
+        <section id="buscarEvento" class="form-group">
+            <input type="text" class="form-control column" name="name" placeholder="Buscar eventos">
+            <input type="submit" class="searchBtn btn btn-primary column" value="Buscar">
+        </section>
+    <!-- </form> -->
+
+    <app-events-list [allEvents]="allEvents"></app-events-list>
+</section>

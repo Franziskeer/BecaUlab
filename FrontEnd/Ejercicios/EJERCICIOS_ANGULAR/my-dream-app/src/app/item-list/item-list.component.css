@@ -1,0 +1,52 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex section {
+    padding: 10px;
+    margin: 10px;
+    background: grey;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.flex section.selected {
+    background: rgb(236, 236, 236); 
+    -webkit-box-shadow: -11px 13px 35px 5px rgba(0,0,0,0.56);
+    -moz-box-shadow: -11px 13px 35px 5px rgba(0,0,0,0.56);
+    box-shadow: -11px 13px 35px 5px rgba(0,0,0,0.56);
+}
+
+.flex ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flex li {
+    background: #fff;
+    font-weight: 700;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    margin: 2em;
+    width: 8em;
+}
+
+.flex img {
+    mix-blend-mode: multiply;
+    height: 15em;
+}
+
+.amount {
+    width: 2em;
+}
+
+.btn-amount {
+    margin: 0 1em;
+    border-color: grey;
+    background: white;
+    border-radius: 100%;
+}
+

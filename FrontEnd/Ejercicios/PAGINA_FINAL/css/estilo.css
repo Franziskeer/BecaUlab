@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "EdgarNo9W01-Regular"; 
+    src: url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.eot"); 
+    src: url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.woff") format("woff"), url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/71266faea999f2993f69055007a94bdb.svg#EdgarNo9W01-Regular") format("svg"); 
+} 
+
+/* CABECERA */
+#head {
+    background: repeating-linear-gradient(135deg, #e0e0e0, #d6d6d6 4px);
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+#logoImg {
+    margin-top: 5vh;
+    margin-left: 6vw;
+}
+
+#tramImg {
+    margin-left: 1vw;
+    height: 40px;
+}
+
+#head nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#head nav ul li {
+    float: left;
+    margin-left: 2vw;
+}
+
+a { 
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none; 
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#headEnd {
+    display: flex;
+    align-items: center;
+    margin-left: 20vw; 
+}
+
+/* ÍNDICE */
+#index {
+    height: 85vh;
+    background: url("../images/manchas.png");
+    background-size: cover;
+}
+
+#tri {
+    background-image: url("../images/triangulos.png");
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+}
+
+#city {
+    background-image: url("../images/ciudad.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    height: 100%;
+}
+
+.header {
+    margin: 0;
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9;
+        color: rgb(240, 225, 192);
+    padding: 10vh 10vw 0 10vw;
+    font-family: "EdgarNo9W01-Regular";
+    font-size: 70px;
+}
+
+#city button {
+    margin: 200px;
+    width: 20vw;
+    height: 12vh;
+    background-image: url("../images/botones.png");
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;   
+}
+
+#city button:hover {
+    background-image: url("../images/botones_hover.png");
+}
+
+/* BIENVENIDA */
+#welcome {
+    height: 100vh;
+  
+}
+
+#tram {
+    height: 32vh;
+    background-image: url("../images/tramado_negro.png");
+    background-repeat: repeat-x;
+    background-size: 15px;
+    font-size: 70px;
+}
+
+/* PIE DE PÁGINA */
+#foot {
+    height: 100vh;
+}
+
+#techno {
+    height: 80vh;
+    background-color: blue;
+}
+
+#contact {
+    height: 20vh;
+    background-color: red;
+}

@@ -1,0 +1,1 @@
+cls & tsc --module commonjs & node built/ejercicio.js

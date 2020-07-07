@@ -1,0 +1,32 @@
+<!-- <section>
+    <h1>
+        Bienvenido a tu {{ mensaje }}
+    </h1>
+    <button (click)="sendEventTotal()">Lanzar evento obtener total items:</button>
+</section> -->
+
+<section class="flex">
+    <section *ngFor="let item of myItems" [class.selected]="item.selected" (mouseenter)="selectItem(item, myItems)">
+        <img [src]="item.image" />
+        <h2>{{item.name | uppercase}}</h2>
+        <p>{{item.description}}</p>
+        <aside>
+            <button class="btn-amount" (click)="downQuantity(item)">-</button>
+            <input type="number" maxlength="2" placeholder="0" class="amount" [(ngModel)]="item.quantity">
+            <button class="btn-amount" (click)="upQuantity(item)">+</button>
+        </aside>
+        <aside>
+            <ul>
+                <li>
+                    <p>{{item.price | currency:'EUR'}}</p>
+                </li>
+                <li *ngIf="item.stock > 0" [class.selected]="item.selected">
+                    <p>{{item.stock}} in Stock</p>
+                </li>
+                <li *ngIf="item.stock === 0" [class.selected]="item.selected">
+                    <p>Out of Stock</p>
+                </li>
+            </ul>
+        </aside>
+    </section>
+</section>

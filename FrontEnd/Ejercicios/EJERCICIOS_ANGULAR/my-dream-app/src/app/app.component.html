@@ -1,0 +1,5 @@
+<section class="centered">
+  <!-- <p>{{total}}</p> -->
+  <app-item-list [mensaje]="title" (total)="updateTotal($event)"></app-item-list>
+  <router-outlet></router-outlet>
+</section>

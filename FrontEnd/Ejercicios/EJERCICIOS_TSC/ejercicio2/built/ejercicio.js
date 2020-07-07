@@ -1,0 +1,26 @@
+let sigue;
+sigue = true;
+console.log(sigue);
+let num;
+num = 21.5;
+console.log(num);
+let nombre = 'Fransisco';
+console.log(nombre);
+let array = ['hola', 'que'];
+console.log(array[0] + nombre);
+const anyo = 21;
+console.log(anyo);
+var medallas;
+(function (medallas) {
+    medallas[medallas["oro"] = 0] = "oro";
+    medallas[medallas["plata"] = 1] = "plata";
+    medallas[medallas["bronce"] = 2] = "bronce";
+})(medallas || (medallas = {}));
+console.log(medallas[2]);
+let clienteEdad;
+clienteEdad = ['ANTONIO', 21];
+console.log(clienteEdad[0]);
+let desconocido;
+console.log(desconocido);
+let persona = { ciudad: 'novelda' };
+console.log(persona);
